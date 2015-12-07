@@ -1,0 +1,13 @@
+<div class="well">
+    <fieldset ng-if="eventCtrl.eventName">
+        <legend>{{eventCtrl.eventName}}</legend>
+        <div prettyp class="col-xs-12 col-sm-4 col-md-3 animated-class" ng-repeat="photo in eventCtrl.photos">
+            <div class="recent-work-wrap">
+                <img class="img-event img-responsive" ng-src="{{photo.url}}" alt="{{photo.name}}">
+                <div class="overlay">
+                    <a class="preview" href="{{photo.url}}" rel="prettyPhoto[pp_gal]"><i class="fa fa-eye"></i> View</a>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</div>

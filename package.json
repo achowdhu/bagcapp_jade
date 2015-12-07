@@ -1,0 +1,16 @@
+{
+  "name": "bagcapp",
+  "version": "1.0.0",
+  "description": "BACG web application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajay Kaushik",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-static": "^1.0.3",
+    "morgan": "^1.6.1"
+  }
+}
