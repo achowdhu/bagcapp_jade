@@ -54,7 +54,7 @@ new WOW().init();
 
         eventService.getEvents().then(function(events) {
             eventCtrl.events = events;
-            console.log(this.events);
+            //console.log(this.events);
         });
 
     }
@@ -65,7 +65,7 @@ new WOW().init();
         eventService.getEventPhotos($stateParams.id)
             .then(function(photos) {
                 eventCtrl.photos = photos;
-                console.log(eventCtrl.photos);
+                //console.log(eventCtrl.photos);
             });
 
     }
