@@ -42,19 +42,24 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li ui-sref-active="active">
-                            <a ui-sref="home">Home</a>
+                            <a  data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" ui-sref="home">Home</a>
                         </li>
                         <!-- <li><a href="#aboutus">About Us</a></li> -->
-                        <li ui-sref-active="active"><a ui-sref="events">Events</a></li>
+                        <li ui-sref-active="active"><a data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in"  ui-sref="events">Events</a></li>
                         <li ui-sref-active="active" class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li ui-sref-active="active"><a href="#membership">Membership</a></li>
-                                <li ui-sref-active="active"><a href="#publication">Publication</a></li>
-                                <li ui-sref-active="active"><a href="#sponsors">Sponsors</a></li>
+                                <li ui-sref-active="active">
+                                    <a  data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" ui-sref="home">Membership</a>
+                                </li>
+                                <li ui-sref-active="active">
+                                    <a  data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" ui-sref="home">Publication</a></li>
+                                <li ui-sref-active="active">
+                                    <a  data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" ui-sref="home">Sponsors</a>
+                                </li>
                             </ul>
                         </li>
-                        <li ui-sref-active="active"><a href="#contact">Contact</a></li>
+                        <li ui-sref-active="active"><a class="navlink" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>

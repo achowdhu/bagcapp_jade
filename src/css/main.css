@@ -8,8 +8,10 @@ body {
     background: #fff;
     font-family: 'Verdana', sans-serif;
     color: #021828;
-    padding-top: 70px;
+    padding-top: 30px;
+    /*font-size: 3vw;*/
 }
+
 
 h1,
 h2,
@@ -23,24 +25,30 @@ h6 {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 2.1em;
     color: #fff;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.4em;
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 1.1em;
     color: #787878;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2.2em;
 }
 
 h4 {
-    font-size: 16px;
+    font-size: .8em;
 }
+
+h5 {
+    font-size: .5em;
+}
+
+
 
 a {
     color: #c52d2f;
@@ -99,9 +107,9 @@ a:focus {
 }
 
 .center h2 {
-    font-size: 36px;
+    font-size: 1.5em;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .media>.pull-left {
@@ -118,7 +126,6 @@ body > section {
 
 .center {
     text-align: center;
-    padding-bottom: 55px;
 }
 
 .scaleIn {
@@ -267,12 +274,12 @@ input.search-form:hover {
 }
 
 .navbar-nav {
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 .navbar-nav>li {
-    margin-left: 35px;
-    padding-bottom: 28px;
+    margin-left: 20px;
+    padding-bottom: 5px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -653,7 +660,7 @@ input.search-form:hover {
     height: 100%;
     opacity: 0.5;
     border-radius: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     vertical-align: middle;
     -webkit-transition: opacity 500ms;
@@ -2596,7 +2603,7 @@ shortcodes page css
 
 .navbar-nav > li > a {
     padding-top: 5px !important;
-    padding-bottom: 5px !important;
+    padding-bottom: 1px !important;
 }
 
 .navbar {
