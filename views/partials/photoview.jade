@@ -1,0 +1,55 @@
+section.shortcode-item.event-area#gallery
+	div.container(style="min-height:1000px" ng-app="appModule" ng-controller="eventPhotoController as eventCtrl")
+		div.row
+			if events
+				fieldset
+					legend Events so far!!!
+					div.well.col-md-4.col-sm-5.col-xs-12
+					
+						
+						div.accordion.wow.fadeInLeft
+							div.panel-group#accordion1
+								- var firstEventAdded =false;
+								each event in events
+									div.panel.panel-default
+										if !firstEventAdded
+											- firstEventAdded= true;
+											div.panel-heading.active
+												h3.panel-title
+													a.accordion-toggle(data-toggle="collapse" data-parent="#accordion1" href="#collapse#{event.eventYear}") #{event.eventYear}
+														
+														i.fa.fa-angle-right.pull-right
+											div.panel-collapse.collapse.in(id="collapse#{event.eventYear}")
+												div.panel-body
+													ul
+														each eventName in event.events
+															li
+																a(ng-click="eventCtrl.getEventPhotos(#{event.eventYear},#{eventName.id},'#{eventName.name}')"  href="#") #{eventName.name}
+										else
+											div.panel-heading
+												h3.panel-title
+													a.accordion-toggle(data-toggle="collapse" data-parent="#accordion1" href="#collapse#{event.eventYear}") #{event.eventYear}
+														
+														i.fa.fa-angle-right.pull-right
+											div.panel-collapse.collapse(id="collapse#{event.eventYear}")
+												div.panel-body
+													ul
+														each eventName in event.events
+															li
+																a(ng-click="eventCtrl.getEventPhotos(#{event.eventYear},#{eventName.id},'#{eventName.name}')" href="#") #{eventName.name}
+					div.col-md-8.col-sm-7.col-xs-12
+						div.recent-work-wrap(ng-if="!eventCtrl.eventName")
+							img.img-event.img-responsive(src="images/bagc/dance.jpg" style="-webkit-filter: blur(10px);filter: blur(10px);")
+							div.mainoverlay
+								div.center-bg-info
+									h1 Welcome to fun world...
+									p.text-primary Check out event links for more..
+						div.well(ng-if="eventCtrl.eventName")
+							fieldset
+								legend {{eventCtrl.eventName}}
+								div.col-xs-12.col-sm-4.col-md-3.animated-class(prettyp ng-repeat="photo in eventCtrl.photos")
+									div.recent-work-wrap
+										img.img-event.img-responsive( ng-src="{{photo.url}}" alt="{{photo.name}}")
+										div.overlay
+											a.preview(href="{{photo.url}}" rel="prettyPhoto[pp_gal]")
+												i.fa.fa-eye View

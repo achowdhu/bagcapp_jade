@@ -1,0 +1,47 @@
+section.contact-area#contact-info
+	div.container
+		div.row.well
+			div.center.wow.fadeInDown
+				h2 How to reach Us?
+				p.lead The journey of a thousand miles begins with one step.
+			div.gmap-area.wow.fadeInUp
+				div.container
+					div.row
+						div.col-sm-5.text-center.wow.fadeInLeft
+							div.embed-responsive.embed-responsive-16by9.gmap
+								iframe.embed-responsive-item(width="100%",height="300px",src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.586506168539!2d-88.06619168497384!3d41.90174897191363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e533311177d25%3A0x2a9836e2c477054b!2sBanga+Bhavan!5e0!3m2!1sen!2sus!4v1450057089902",allowfullscreen="true")
+						div.col-sm-7.map-content.wow.fadeInRight
+							ul.row
+								li.col-sm-6
+									address
+										h5 Home away from Home
+										p Banga Bhavan
+										p(style='white-space:pre;') 
+											|1148 Main St, 
+											|Glen Ellyn, IL 60137
+										p(style='white-space:pre;') 
+											|Phone:111-222-3333
+											|Email Address:bagc@googlegroups.com	
+		div.row.well
+			div.center.wow.fadeInDown
+				h2 Leave us a message
+				p.lead A small message goes a long way, let us know you were here.
+			div.row.contact-wrap.wow.fadeInUp
+				div.status-alert-alert-alert-success(style="display: none")
+				form.contact-form#main-contact-form(name="contact-form" method="post" action="")
+					div.col-sm-5.col-sm-offset-1.wow.fadeInLeft
+						div.form-group
+							label Name *
+							input.form-control#name(type="text" name="name" required="required")
+						div.form-group
+							label Email *
+							input.form-control#email(type="email" name="email" required="required")
+						div.form-group
+							label Phone *
+							input.form-control#phone(type="number" name="phone")
+					div.col-sm-5.wow.fadeInRight
+						div.form-group
+							label Message *
+							textarea.form-control#message(name="message" required="required" class="form-control" rows="8")
+						div.form-group
+							button.btn.btn-primary.btn-lg#submit(type="submit" name="submit" required="required") Submit Message
