@@ -25,24 +25,21 @@
 
  app.get("/photos/:eventId", routes.eventphotos);
  app.get("/photos", routes.photos);
- app.get("/", routes.index);
+ app.get("*", routes.index);
 
- app.get("*", function(req, res) {
-     res.status(404).send("Content Not found.");
- })
  var nodemailer = require('nodemailer')
  var transport = nodemailer.createTransport({ // [1]
      service: "Gmail",
      auth: {
-         user: "happyhours2233@gmail.com",
-         pass: "Node@123admin"
+         user: "******************",//Service Account email address 
+         pass: "******************",//Service Account Password
      }
  });
 
- // setup e-mail data with unicode symbols 
+ // setup e-mail data
  var mailOptions = {
      from: 'BAGC Admin<alerts@bagc.net>', // sender address 
-     to: 'happyhours2233@gmail.com', // list of receivers 
+     to: '****************', // list of receivers 
      subject: 'BAGC | Crash Alert | ', // Subject line 
      text: 'BAGC crashed in production' // plaintext body 
  };
