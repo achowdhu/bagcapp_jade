@@ -1,0 +1,39 @@
+section#pastpresidents
+	div.container
+		div.row
+			if pastpresidents
+				fieldset
+					legend President's Message
+					div.accordion.wow.fadeInLeft
+							div.panel-group#accordion1
+								- var firstEventAdded =false;
+								each pastpresident in pastpresidents
+									- var name=pastpresident.name;
+									- var year=pastpresident.year;
+									- var idForPanel="collapse_"+year;
+									div.panel.panel-default
+										if !firstEventAdded
+											- firstEventAdded= true;
+											div.panel-heading.active(data-toggle="collapse" data-parent="#accordion1" data-target="##{idForPanel}") 
+												h3.panel-title
+													a.accordion-toggle #{name} #{year}
+														
+														i.fa.fa-angle-right.pull-right
+											div.panel-collapse.collapse.in(id="#{idForPanel}")
+												div.panel-body
+													img.img-responsive.img-past-pres.wow.fadeInDown(src="#{pastpresident.imageurl}")
+													each textpara in pastpresident.message
+														p.lead.wow.fadeInDown #{textpara}
+										else
+											div.panel-heading(data-toggle="collapse" data-parent="#accordion1" data-target="##{idForPanel}") 
+												h3.panel-title
+													a.accordion-toggle #{name} #{year}
+														
+														i.fa.fa-angle-right.pull-right
+											div.panel-collapse.collapse(id="#{idForPanel}")
+												div.panel-body
+
+													img.img-responsive.img-past-pres.wow.fadeInDown(src="#{pastpresident.imageurl}")
+
+													each textpara in pastpresident.message
+														p.lead.wow.fadeInDown #{textpara}

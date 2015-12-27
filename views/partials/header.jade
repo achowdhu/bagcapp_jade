@@ -12,8 +12,22 @@ header#header
 				ul.nav.navbar-nav
 					li.active
 						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/") Home
-					li
-						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/#about") About us
+					li.dropdown
+						a.dropdown-toggle(data-toggle="dropdown" href="#") About Us
+							i.fa.fa-angle-down(style="margin-left:.5em;")
+						ul.dropdown-menu
+							li						
+								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#bangabhavan") Banga Bhavan
+							li						
+								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#Committee") Committee
+							li						
+								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#history") History
+							li						
+								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="docs/bot/botminutes.pdf" target="_blank") BOT
+							li						
+								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="docs/constitution/bylaws2013.pdf" target="_blank") Constitution
+							li						
+								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#pastpresidents") President's Message
 					li
 						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/#events") Events
 					li

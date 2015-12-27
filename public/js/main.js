@@ -14,7 +14,8 @@ jQuery(function($) {
         // });
 
         // accordian
-        $('.accordion-toggle').on('click', function() {
+        //$('.accordion-toggle').on('click', function() {
+        $('.panel-heading').on('click', function() {
             $(this).closest('.panel-group').children().each(function() {
                 $(this).find('>.panel-heading').removeClass('active');
             });

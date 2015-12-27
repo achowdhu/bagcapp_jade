@@ -12,11 +12,17 @@
  app.set('port', process.env.PORT || 3000);
  app.set('views', __dirname + '/views');
  app.set('view engine', 'jade');
+
  app.use(morgan('dev'));
 
  app.use(bodyParser.urlencoded({
      extended: true
  }));
+
+
+ if (app.get('env') === 'development') {
+     app.locals.pretty = true;
+ }
  app.use(bodyParser.json());
  app.use(methodOverride());
 
@@ -25,14 +31,16 @@
 
  app.get("/photos/:eventId", routes.eventphotos);
  app.get("/photos", routes.photos);
+ app.get("/about", routes.about);
  app.get("*", routes.index);
+ app.get("/*", routes.index);
 
  var nodemailer = require('nodemailer')
  var transport = nodemailer.createTransport({ // [1]
      service: "Gmail",
      auth: {
-         user: "******************",//Service Account email address 
-         pass: "******************",//Service Account Password
+         user: "******************", //Service Account email address 
+         pass: "******************", //Service Account Password
      }
  });
 
