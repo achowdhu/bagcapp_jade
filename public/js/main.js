@@ -2,8 +2,15 @@ jQuery(function($) {
     'use strict';
     $(document).ready(function() {;
         //Initiat WOW JS
-        var wow = new WOW();
+        var wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: false,
+            live: true // default
+        })
         wow.init();
+
         $("[rel^='prettyPhoto']").prettyPhoto({
             deeplinking: false,
             social_tools: false
