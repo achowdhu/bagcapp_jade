@@ -2,44 +2,20 @@ section.no-margin#main-slider
 	div.carousel.slide
 		
 		div.carousel-inner(style="position:relative")
-			div.item.active.bgdiv.main-carousel-item
-			div.item.active.container(style="position:absolute;top:0;left:0;")
+			div.item.active.bgdiv
+			div.container(style="position:absolute;z-index:1000;top:0;left:0")
 					div.row.slide-margin.mainheader
 						div.col-sm-12.col-cs-12
 							h1.center.wow.fadeInDown Bengali Association of Greater Chicago
 					div.row.slide-margin.mainheader
 						div.col-sm-6.col-xs-12
-							div
-								h2.animation.animated-item-1 Celeberating 50 Years of Bengali Culture and Heritage
-								p.lead.animation.animated-item-2 We are a Chicago based non-profit organization established in 1974. Banga Bhavan, located centrally in Chicago land, is dedicated in promoting literature, art and cultural heritage of Bengal. We are a strong community where we socialize together, celebrate festival together and work together. A warm welcome from us.
-								div.animation.animated-item-3.embed-responsive.embed-responsive-16by9
-									iframe.embed-responsive-item(width="100%",height="200px",src="//www.youtube.com/embed/CJE5-08gOw4",allowfullscreen="true")
-						div.col-sm-6.col-xs-12.animation.animated-item-2#upcomingEvents
-							h2.animation.animated-item-2 Upcoming events
-							div.carousel.slide
-								ol.carousel-indicators
-									li.active(data-target="#upcomingEvents" data-slide-to="0")
-									li(data-target="#upcomingEvents" data-slide-to="1")
-								div.carousel-inner
-									div.item.active
-										
-											div.row
-												div.col-sm-12.col-xs-12
-													
-														a(href="/#events")
-															img.img-responsive.img-newevent(src="images/bagc/upcomingevents/1.png")
-									div.item
-										
-											div.row
-												div.col-sm-12.col-xs-12
-													
-														a(href="/#events")
-															img.img-responsive.img-newevent(src="images/bagc/upcomingevents/2.jpg")
-							
-							
-
+							h2.animation.animated-item-1.wow.fadeIn Celeberating 50 Years of Bengali Culture and Heritage
+							p.lead.animation.animated-item-2.wow.fadeIn We are a Chicago based non-profit organization established in 1974. Banga Bhavan, located centrally in Chicago land, is dedicated in promoting literature, art and cultural heritage of Bengal. We are a strong community where we socialize together, celebrate festival together and work together. A warm welcome from us.
 					div.row.slide-margin.mainheader
-						
+						div.col-sm-6.col-xs-12
+							div.animation.animated-item-3.wow.fadeIn
+								div.embed-responsive.embed-responsive-16by9
+								iframe.embed-responsive-item(width="75%",height="200px",src="//www.youtube.com/embed/CJE5-08gOw4",allowfullscreen="true")
 					div.row.slide-margin
 						div.row.slide-margin.mainheader
 						div.col-sm-2.col-xs-4(prettyp)

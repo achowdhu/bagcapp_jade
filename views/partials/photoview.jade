@@ -47,7 +47,7 @@ section.shortcode-item.event-area#gallery
 						div.well(ng-if="eventCtrl.eventName")
 							fieldset
 								legend {{eventCtrl.eventName}}
-								div.col-xs-12.col-sm-4.col-md-3.animated-class(prettyp ng-repeat="photo in eventCtrl.photos")
+								div.col-xs-6.col-sm-4.col-md-3.animated-class(prettyp ng-repeat="photo in eventCtrl.photos")
 									div.recent-work-wrap
 										img.img-event.img-responsive( ng-src="{{photo.url}}" alt="{{photo.name}}")
 										div.overlay

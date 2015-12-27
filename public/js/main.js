@@ -4,7 +4,10 @@ jQuery(function($) {
         //Initiat WOW JS
         var wow = new WOW();
         wow.init();
-
+        $("[rel^='prettyPhoto']").prettyPhoto({
+            deeplinking: false,
+            social_tools: false
+        });
         // $("body").scrollspy({
         //     target: "#bagcnav",
         //     offset="0"
