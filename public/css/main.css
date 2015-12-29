@@ -8,7 +8,7 @@ body {
     background: rgba(0, 0, 0, 0.1);
     font-family: 'Verdana', sans-serif;
     color: #021828;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 html {
   overflow: auto; 
@@ -115,7 +115,7 @@ a:focus {
 .center h2 {
     font-size: 36px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .media>.pull-left {
@@ -127,7 +127,7 @@ a:focus {
 }
 
 body > section {
-    padding: 70px 0;
+    padding-top: 50px;
 }
 
 .center {
