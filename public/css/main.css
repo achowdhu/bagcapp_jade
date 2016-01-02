@@ -209,7 +209,7 @@ body > section {
 
 .img-newevent {
     width: 100%;
-    max-height: 370px;
+    height: 460px !important;
 }
 
 .img-pastevent {
@@ -420,6 +420,8 @@ body > section {
 .carousel-fade .carousel-inner .item {
     -webkit-transition-property: opacity;
     transition-property: opacity;
+
+
 }
 
 .carousel-fade .carousel-inner .item,
