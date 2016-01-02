@@ -29,7 +29,7 @@
 
  // set the static files location /public/img will be /img for users
  app.use(express.static(path.join(__dirname, '/public'), {
-     maxAge: 100000
+     maxAge: 100000000
  }));
 
  app.get("/photos/:eventId", routes.eventphotos);

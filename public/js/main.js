@@ -45,8 +45,8 @@ jQuery(function($) {
             var hash = window.location.hash;
             if (hash) {
                 var sectionName = "#nav_" + hash.substr(1);
-                console.log(sectionName);
-                console.log($(sectionName));
+                //console.log(sectionName);
+                //console.log($(sectionName));
                 $('.nav.navbar-nav li.active:not(.dropdown)').removeClass('active');
                 $(sectionName).addClass('active');
             }
