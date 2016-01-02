@@ -7,12 +7,13 @@
 
  var routes = require("./routes/index");
  var app = express(); // create our app w/ express
-
+ var compress = require('compression')();
+ app.use(compress);
  // all environments
  app.set('port', process.env.PORT || 3000);
  app.set('views', __dirname + '/views');
  app.set('view engine', 'jade');
- 
+
  app.use(morgan('dev'));
 
  app.use(bodyParser.urlencoded({
@@ -27,7 +28,9 @@
  app.use(methodOverride());
 
  // set the static files location /public/img will be /img for users
- app.use(express.static(path.join(__dirname, '/public')));
+ app.use(express.static(path.join(__dirname, '/public'), {
+     maxAge: 100000
+ }));
 
  app.get("/photos/:eventId", routes.eventphotos);
  app.get("/photos", routes.photos);
