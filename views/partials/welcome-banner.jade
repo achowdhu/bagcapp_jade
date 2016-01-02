@@ -2,40 +2,22 @@ section#main
 	div.container
 		div.row
 			h1.center.wow.fadeInDown Bengali Association of Greater Chicago
-		div.row#main-slider
-			div.carousel.slide
+		div.row
+			div.carousel.slide.carousel-fade(data-ride="carousel")#main-slider
 				ol.carousel-indicators
 					li.active(data-target="#main-slider" data-slide-to="0")
 					li(data-target="#main-slider" data-slide-to="1")
 					li(data-target="#main-slider" data-slide-to="2")
 					li(data-target="#main-slider" data-slide-to="3")
-				div.carousel-inner
-					div.item.active.wow.fadeIn(data-wow-duration="1000ms")
-						div.row
-							div.col-sm-12.col-xs-12
-								a(href="/#events")
-									img.img-responsive.img-newevent(src="images/bagc/home/BAGC.png")
-					div.item.wow.fadeIn(data-wow-duration="1000ms")
-						
-							div.row
-								div.col-sm-12.col-xs-12
-									
-										a(href="/#events")
-											img.img-responsive.img-newevent(src="images/bagc/home/2016 Mission.png")
-					div.item.wow.fadeIn(data-wow-duration="1000ms")
-						
-							div.row
-								div.col-sm-12.col-xs-12
-									
-										a(href="/#events")
-											img.img-responsive.img-newevent(src="images/bagc/upcomingevents/1.png")
-					div.item.wow.fadeIn(data-wow-duration="1000ms")
-						
-							div.row
-								div.col-sm-12.col-xs-12
-									
-										a(href="/#events")
-											img.img-responsive.img-newevent(src="images/bagc/upcomingevents/2.jpg")
+				div.carousel-inner(role="listbox")
+					div.item.active
+						img.img-responsive.img-newevent.wow.fadeIn(src="images/bagc/home/BAGC.png")
+					div.item.wow
+						img.img-responsive.img-newevent.wow.fadeIn(src="images/bagc/home/2016 Mission.png")
+					div.item.wow
+						img.img-responsive.img-newevent.wow.fadeIn(src="images/bagc/upcomingevents/1.png")
+					div.item.wow
+						img.img-responsive.img-newevent.wow.fadeIn(src="images/bagc/upcomingevents/2.jpg")
 							
 				a.prev.hidden-xs(href="#main-slider" data-slide="prev")
 					i.fa.fa-chevron-left
