@@ -32,8 +32,17 @@
  app.get("/photos/:eventId", routes.eventphotos);
  app.get("/photos", routes.photos);
  app.get("/about", routes.about);
- app.get("*", routes.index);
- app.get("/*", routes.index);
+ app.get("/newsletters", routes.newsletters);
+ app.get("/", routes.index);
+
+
+ // Handle 404
+ app.use(function(req, res) {
+     res.status(400);
+     res.render('404.jade', {
+         title: '404: File Not Found'
+     });
+ });
 
  var nodemailer = require('nodemailer')
  var transport = nodemailer.createTransport({ // [1]

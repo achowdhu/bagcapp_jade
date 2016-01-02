@@ -4,7 +4,8 @@
     var eventphotos = require("./mockdata/eventphotos.json");
     var committeemembers = require("./data/committeemembers.json");
     var pastpresidents = require("./data/pastpresidents.json");
-
+    var newsletters = require("./data/newsletters.json");
+console.log(newsletters);
     module.exports.index = function(req, res) {
         res.render('index');
     };
@@ -22,6 +23,11 @@
         res.locals.committeemembers = committeemembers;
         res.locals.pastpresidents = pastpresidents;
         res.render('about-main');
+    };
+
+    module.exports.newsletters = function(req, res) {
+        res.locals.newsletters = newsletters;
+                res.render('newsletters-main');
     };
     module.exports.eventphotos = function(req, res) {
         var event = _.find(eventphotos, function(eventphoto) {

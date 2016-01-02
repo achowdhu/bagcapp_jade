@@ -1,0 +1,213 @@
+{
+    "current": [{
+        "name": "Current Issue",
+        "url": "docs/newsletters/current/NLV515.pdf"
+    }, {
+        "name": "Saradiya Samaj Sambad 2014",
+        "url": "docs/newsletters/current/sss14.pdf"
+    }, {
+        "name": "Vivekananda_150th",
+        "url": "docs/newsletters/current/naren.pdf"
+    }],
+    "archives": [{
+        "year": "2015",
+        "editions": [
+
+            {
+                "url": "docs/newsletters/2015/newsletter_1_2015_final.pdf",
+                "name": "Vol 40-1/5"
+            }, {
+                "url": "docs/newsletters/2015/NLV215.pdf",
+                "name": "Vol 40-2/5"
+            }, {
+                "url": "docs/newsletters/2015/NLV315.pdf",
+                "name": "Vol 40-3/5"
+            }, {
+                "url": "docs/newsletters/2015/NLV415.pdf",
+                "name": "Vol 40-4/5"
+            }, {
+                "url": "docs/newsletters/2015/NLV515.pdf",
+                "name": "Vol 40-4/5"
+            }
+
+        ]
+    }, {
+        "year": "2014",
+        "editions": [{
+            "url": "docs/newsletters/2014/NLV114.pdf",
+            "name": "Vol 39-1/5"
+        }, {
+            "url": "docs/newsletters/2014/NLV214.pdf",
+            "name": "Vol 39-2/5"
+        }, {
+            "url": "docs/newsletters/2014/NLV314.pdf",
+            "name": "Vol 39-3/5"
+        }, {
+            "url": "docs/newsletters/2014/NLV414.pdf",
+            "name": "Vol 39-4/5"
+        }, {
+            "url": "docs/newsletters/2014/NLV514.pdf",
+            "name": "Vol 39-5/5"
+        }]
+    }, {
+        "year": "2013",
+        "editions": [{
+                "url": "docs/newsletters/2013/NLV113.pdf",
+                "name": "Vol 38-1/5"
+            },
+
+            {
+                "url": "docs/newsletters/2013/NLV213.pdf",
+                "name": "Vol 38-2/5"
+            },
+
+            {
+                "url": "docs/newsletters/2013/NLV313.pdf",
+                "name": "Vol 38-3/5"
+            },
+
+            {
+                "url": "docs/newsletters/2013/NLV413.pdf",
+                "name": "Vol 38-4/5"
+            }, {
+                "url": "docs/newsletters/2013/NLV513.pdf",
+                "name": "Vol 38-5/5"
+            }
+        ]
+    }, {
+        "year": "2012",
+        "editions": [{
+            "url": "docs/newsletters/2012/NLV371.pdf",
+            "name": "Vol 37-1/5"
+        }]
+    }, {
+        "year": "2010",
+        "editions": [{
+            "url": "docs/newsletters/2010/BAGC_NL_Vol35_No4_5_Oct_Nov_2010.pdf",
+            "name": "Vol 35-4/5"
+        }]
+    }, {
+        "year": "2009",
+        "editions": [{
+                "url": "docs/newsletters/2009/BAGC+SaraswatiPuja+V1.pdf",
+                "name": "Vol 34-1"
+            },
+
+            {
+                "url": "docs/newsletters/2009/NewsLetter - April 2009 Final.pdf",
+                "name": "Vol 34-2"
+            },
+
+            {
+                "url": "docs/newsletters/2009/BAGC 2009 June final.pdf",
+                "name": "Vol 34-3"
+            },
+
+            {
+                "url": "docs/newsletters/2009/BAGC 2009 Sept Newsletter.pdf",
+                "name": "Vol 34-4"
+            },
+
+            {
+                "url": "docs/newsletters/2009/BAGC 2009 Oct Newsletter-10-29-09.pdf",
+                "name": "Vol 34-5"
+            }
+        ]
+    }, {
+        "year": "2008",
+        "editions": [{
+                "url": "docs/newsletters/2008/BAGC%20NL%20Jan2008.pdf",
+                "name": "Vol 33-1"
+            },
+
+            {
+                "url": "docs/newsletters/2008/BAGC%20NL%20APR2008.pdf",
+                "name": "Vol 33-2"
+            },
+
+            {
+                "url": "docs/newsletters/2008/Newsletter_June08.pdf",
+                "name": "Vol 33-3"
+            },
+
+            {
+                "url": "docs/newsletters/2008/BAGC_newsletter_Durga_Puja_091908.pdf",
+                "name": "Vol 33-4"
+            },
+
+            {
+                "url": "docs/newsletters/2008/BAGC_NL_Oct2008.pdf",
+                "name": "Vol 33-5"
+            }
+        ]
+    }, {
+        "year": "2007",
+        "editions": [ {
+            "url": "docs/newsletters/2007/NL2007V32I02.1.pdf",
+            "name": "Survey"
+        }, {
+            "url": "docs/newsletters/2007/NL2007V32I03.pdf",
+            "name": "Vol. 32-3 "
+        }, {
+            "url": "docs/newsletters/2007/NL2007V32I04.pdf",
+            "name": "Vol. 32-4"
+        }, {
+            "url": "docs/newsletters/2007/NL2007V32I05.pdf",
+            "name": "Vol. 32-5"
+        }]
+    }, {
+        "year": "2006",
+        "editions": [{
+            "url": "docs/newsletters/2006/BAGCNewsletter2006Vol1.pdf",
+            "name": "Vol 31-1"
+        }, {
+            "url": "docs/newsletters/2006/BAGCNewsletter2006Vol2.pdf",
+            "name": "Vol 31-2"
+        }, {
+            "url": "docs/newsletters/2006/BAGCNewsletter2006Vol3.pdf",
+            "name": "Vol 31-3"
+        }, {
+            "url": "docs/newsletters/2006/NL2006V31I04.pdf",
+            "name": "Vol 31-4"
+        }]
+    }, {
+        "year": "2005",
+        "editions": [{
+            "url": "docs/newsletters/2005/NL2005V30I01.pdf",
+            "name": "Vol 30-1"
+        }, {
+            "url": "docs/newsletters/2005/NL2005V30I02.pdf",
+            "name": "Vol 30-2"
+        }, {
+            "url": "docs/newsletters/2005/NL2005V30I03.pdf",
+            "name": "Vol 30-3"
+        }]
+    }, {
+        "year": "2004",
+        "editions": [{
+            "url": "docs/newsletters/2004/newslettervol29-2.pdf",
+            "name": "Vol. 28-2"
+        }, {
+            "url": "docs/newsletters/2004/newslettervol29-4.pdf",
+            "name": "Vol. 29-4"
+        }, {
+            "url": "docs/newsletters/2004/newslettervol29-5.pdf",
+            "name": "Vol. 29-5"
+        }]
+    }, {
+        "year": "2003",
+        "editions": [{
+            "url": "docs/newsletters/2003/newslettervol28-2.pdf",
+            "name": "Vol. 28-2"
+        }, {
+            "url": "docs/newsletters/2003/newslettervol28-3.pdf",
+            "name": "Vol. 28-3"
+        }, {
+            "url": "docs/newsletters/2003/newslettervol28-4.pdf",
+            "name": "Vol. 28-4"
+        }, {
+            "url": "docs/newsletters/2003/newslettervol28-5.pdf",
+            "name": "Vol. 28-5"
+        }]
+    }]
+}
