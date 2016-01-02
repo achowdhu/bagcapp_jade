@@ -9,32 +9,34 @@ header#header
 					span.icon-bar
 				a.navbar-brand(href="/" title="Go to BAGC home page") BAGC
 			div.collapse.navbar-collapse.navbar-right#navdiv
+				
 				ul.nav.navbar-nav
-					li.active
+					
+					li(class="#{link=='home'?'active':''}")
 						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/") Home
-					li.dropdown
+					li.dropdown(class="#{link=='about'?'active':''}")
 						a.dropdown-toggle(data-toggle="dropdown" href="#") About Us
 							i.fa.fa-angle-down(style="margin-left:.5em;")
 						ul.dropdown-menu
-							li						
+							li#nav_bangabhavan						
 								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#bangabhavan") Banga Bhavan
-							li						
-								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#Committee") Committee
-							li						
+							li#nav_committee						
+								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#committee") Committee
+							li#nav_history						
 								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#history") History
 							li						
 								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="docs/bot/botminutes.pdf" target="_blank") BOT
 							li						
 								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="docs/constitution/bylaws2013.pdf" target="_blank") Constitution
-							li						
+							li#nav_pastpresidents					
 								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#pastpresidents") President's Message
-					li
+					li(class="#{link=='events'?'active':''}")#nav_events
 						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/#events") Events
 					li
 						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in"  target="_blank" href="http://www.bagc.net/bagc/node/11") Membership
-					li
+					li(class="#{link=='gallery'?'active':''}")
 						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/photos") Photo Gallery
-					li
+					li(class="#{link=='newsletters'?'active':''}")
 						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/Newsletters") Newsletters
-					li
-						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/#contact-info") Contact us
+					li(class="#{link=='contact'?'active':''}")#nav_contact
+						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/#contact") Contact us

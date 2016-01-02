@@ -14,7 +14,7 @@ html
 		link(href="/css/main.css" rel="stylesheet")
 		link(href="/css/responsive.css" rel="stylesheet")
 		
-	body.homepage
+	body.homepage(data-spy="scroll" data-target=".navbar-fixed-top")
 		include partials/header
 		block mainview
 		include partials/footer

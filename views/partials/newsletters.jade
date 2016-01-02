@@ -24,27 +24,21 @@ section#newsletters
 									.parrent.pull-left
 										ul.nav.nav-tabs.nav-stacked
 											- var firstTabAdded=false;
-											each archive in newsletters.archives
+											each archive,tabIndex in newsletters.archives
 												- var year=archive.year;
 												- var idForTab="tab_"+year;
-												if !firstTabAdded
-													-firstTabAdded=true;
-													li.active.tabheader
-														a(href="##{idForTab}" data-toggle="tab") #{year}
-												else 
-													li.tabheader
-														a(href="##{idForTab}" data-toggle="tab") #{year}     
-		
+												
+												li(class="#{tabIndex===0?'tabheader active':'tabheader'}")
+													a(href="##{idForTab}" data-toggle="tab") #{year}
+
 											
 									.parrent.media-body
 										.tab-content
 											- firstTabAdded=false;
-											each archive in newsletters.archives
+											each archive,index in newsletters.archives
 												- var year=archive.year;
 												- var idForTab="tab_"+year;
-												if !firstTabAdded
-													- firstTabAdded=true;
-													.tab-pane.active.in(id="#{idForTab}")
+												.tab-pane(id="#{idForTab}" class="#{index===0?'active in':''}")
 														.media
 															.media-body
 																table.table.table-hover
@@ -53,13 +47,4 @@ section#newsletters
 																			td.wow.fixfadeInDown
 																				a(target="_blank" href="#{edition.url}")
 																					p #{edition.name}
-												else
-													.tab-pane(id="#{idForTab}")
-														.media
-															.media-body
-																table.table.table-hover
-																	each edition in archive.editions
-																		tr
-																			td.wow.fixfadeInDown
-																				a(target="_blank" href="#{edition.url}")
-																					p #{edition.name}		
+					

@@ -9,34 +9,20 @@ section.shortcode-item.event-area#gallery
 						
 						div.accordion.wow.fadeInLeft
 							div.panel-group#accordion1
-								- var firstEventAdded =false;
-								each event in events
+								each event,index in events
 									div.panel.panel-default
-										if !firstEventAdded
-											- firstEventAdded= true;
-											div.panel-heading.active
+										div(class="#{index===0?'panel-heading active':'panel-heading'}")
 												h3.panel-title
 													a.accordion-toggle(data-toggle="collapse" data-parent="#accordion1" href="#collapse#{event.eventYear}") #{event.eventYear}
 														
 														i.fa.fa-angle-right.pull-right
-											div.panel-collapse.collapse.in(id="collapse#{event.eventYear}")
+											div(id="collapse#{event.eventYear}" class="#{index===0?'panel-collapse collapse in':'panel-collapse collapse'}")
 												div.panel-body
 													ul
 														each eventName in event.events
 															li
 																a(ng-click="eventCtrl.getEventPhotos(#{event.eventYear},#{eventName.id},'#{eventName.name}')"  href="#") #{eventName.name}
-										else
-											div.panel-heading
-												h3.panel-title
-													a.accordion-toggle(data-toggle="collapse" data-parent="#accordion1" href="#collapse#{event.eventYear}") #{event.eventYear}
-														
-														i.fa.fa-angle-right.pull-right
-											div.panel-collapse.collapse(id="collapse#{event.eventYear}")
-												div.panel-body
-													ul
-														each eventName in event.events
-															li
-																a(ng-click="eventCtrl.getEventPhotos(#{event.eventYear},#{eventName.id},'#{eventName.name}')" href="#") #{eventName.name}
+										
 					div.col-md-8.col-sm-7.col-xs-12
 						div.recent-work-wrap(ng-if="!eventCtrl.eventName")
 							img.img-event.img-responsive(src="images/bagc/dance.jpg" style="-webkit-filter: blur(10px);filter: blur(10px);")

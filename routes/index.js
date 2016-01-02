@@ -5,29 +5,29 @@
     var committeemembers = require("./data/committeemembers.json");
     var pastpresidents = require("./data/pastpresidents.json");
     var newsletters = require("./data/newsletters.json");
-console.log(newsletters);
+
     module.exports.index = function(req, res) {
+        res.locals.link = "home";
         res.render('index');
     };
 
-    module.exports.partials = function(req, res) {
-        var name = req.params.name;
-        res.render('partials/' + name);
-    };
+
     module.exports.photos = function(req, res) {
         res.locals.events = events;
-        console.log(events);
+        res.locals.link = "gallery";
         res.render('partials/gallery');
     };
     module.exports.about = function(req, res) {
         res.locals.committeemembers = committeemembers;
         res.locals.pastpresidents = pastpresidents;
+        res.locals.link = "about";
         res.render('about-main');
     };
 
     module.exports.newsletters = function(req, res) {
         res.locals.newsletters = newsletters;
-                res.render('newsletters-main');
+        res.locals.link = "newsletters";
+        res.render('newsletters-main');
     };
     module.exports.eventphotos = function(req, res) {
         var event = _.find(eventphotos, function(eventphoto) {

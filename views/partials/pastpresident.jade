@@ -9,37 +9,21 @@ section#pastpresidents
 						.media
 							.parrent.pull-left
 								ul.nav.nav-tabs.nav-stacked
-									- var firstTabAdded=false;
-									each pastpresident in pastpresidents
+									
+									each pastpresident,tabIndex in pastpresidents
 										- var name=pastpresident.name;
 										- var year=pastpresident.year;
 										- var idForTab="tab_"+year;
-										if !firstTabAdded
-											-firstTabAdded=true;
-											li.active.tabheader
+										li(class="#{tabIndex===0?'tabheader active':'tabheader'}")
 												a(href="##{idForTab}" data-toggle="tab") #{name} #{year}
-										else 
-											li.tabheader
-												a(href="##{idForTab}" data-toggle="tab") #{name} #{year}
-
-									
 							.parrent.media-body
 								.tab-content
-									- firstTabAdded=false;
-									each pastpresident in pastpresidents
+									
+									each pastpresident,tabIndex in pastpresidents
 										- var name=pastpresident.name;
 										- var year=pastpresident.year;
 										- var idForTab="tab_"+year;
-										if !firstTabAdded
-											- firstTabAdded=true;
-											.tab-pane.active.in(id="#{idForTab}")
-												.media
-													.media-body
-														img.img-responsive.img-past-pres.fixfadeInDown(src="#{pastpresident.imageurl}")
-														each textpara in pastpresident.message
-															p.lead.fixfadeInDown #{textpara}
-										else
-											.tab-pane(id="#{idForTab}")
+										.tab-pane(id="#{idForTab}" class="#{tabIndex===0?'active in':''}")
 												.media
 													.media-body
 														img.img-responsive.img-past-pres.fixfadeInDown(src="#{pastpresident.imageurl}")
