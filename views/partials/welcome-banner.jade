@@ -24,12 +24,16 @@ section#main
 				a.right.hidden-xs(href="#main-slider" data-slide="next")
 					i.fa.fa-chevron-right
 
-		if banners								
-			div.row
-				each banner in banners
-					div.col-sm-2.col-xs-4(prettyp)
-						div.recent-work-wrap.wow.fadeInLeft
-							img.img-event.img-responsive.img-banner(src="#{banner}" alt="")
-							div.overlay
-								a.preview(style="width:100%" href="#{banner}" rel="prettyPhoto[pp_banner]")
-									i.fa.fa-eye
+		section.sponsors-area#sponsors
+			div.container
+				div.center
+					h2 Sponsors
+				div.row.wow.fadeInDown
+					if banners
+						each banner,index in banners
+							div.col-sm-2.col-xs-4(prettyp)
+								div.recent-work-wrap.wow.fadeInLeft
+									img.img-event.img-responsive.img-banner(src="#{banner}" alt="")
+									div.overlay
+										a.preview(style="width:100%" href="#{banner}" rel="prettyPhoto[pp_banner]")
+											i.fa.fa-eye		

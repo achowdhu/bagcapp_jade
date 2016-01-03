@@ -47,6 +47,12 @@
         -o-background-size: cover;
         background-size: cover;
     }
+    /*Sponsors Area*/
+    
+    .sponsors-area {
+        padding-top: 45px;
+        padding-bottom: 10px;
+    }
     /*.bgdiv:before {
     content: ' ';
     display: block;
@@ -588,7 +594,7 @@
         right: 10px;
         float: right;
     }
-
+    
     #main-slider .left:hover,
     #main-slider .right:hover {
         background-color: #000;

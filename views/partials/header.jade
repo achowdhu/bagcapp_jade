@@ -14,6 +14,8 @@ header#header
 					
 					li(class="#{link=='home'?'active':''}")
 						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/") Home
+					li(class="#{link=='events'?'active':''}")#nav_events
+						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/#events") Events
 					li.dropdown(class="#{link=='about'?'active':''}")
 						a.dropdown-toggle(data-toggle="dropdown" href="#") About Us
 							i.fa.fa-angle-down(style="margin-left:.5em;")
@@ -30,13 +32,15 @@ header#header
 								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="docs/constitution/bylaws2013.pdf" target="_blank") Constitution
 							li#nav_pastpresidents					
 								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#pastpresidents") President's Message
-					li(class="#{link=='events'?'active':''}")#nav_events
-						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/#events") Events
+							li#nav_contact
+								a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/about#contact") Contact us
+					
 					li
 						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in"  target="_blank" href="http://www.bagc.net/bagc/node/11") Membership
 					li(class="#{link=='gallery'?'active':''}")
 						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/photos") Photo Gallery
 					li(class="#{link=='newsletters'?'active':''}")
-						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/Newsletters") Newsletters
-					li(class="#{link=='contact'?'active':''}")#nav_contact
-						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/#contact") Contact us
+						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/newsletters") Newsletters
+					li(class="#{link=='sponsors'?'active':''}")
+						a(data-toggle="collapse" data-target=".navbar-collapse.navbar-right.in" href="/#sponsors") Sponsors
+					
