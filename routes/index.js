@@ -5,9 +5,20 @@
     var committeemembers = require("./data/committeemembers.json");
     var pastpresidents = require("./data/pastpresidents.json");
     var newsletters = require("./data/newsletters.json");
+   
+    var bannerImgs = [];
+    var fs = require('fs');
 
+    var dirbanners = fs.readdirSync('./public/images/bagc/banners');
+
+    
+    dirbanners.forEach(function(file) {
+        bannerImgs.push("/images/bagc/banners/"+file);
+    });
+    console.log(bannerImgs);
     module.exports.index = function(req, res) {
         res.locals.link = "home";
+        res.locals.banners=bannerImgs;
         res.render('index');
     };
 
