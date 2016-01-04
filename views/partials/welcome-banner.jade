@@ -1,8 +1,8 @@
 section#main
 	div.container
-		div.row.wow.fadeInDown
-			h1.center Bengali Association of Greater Chicago
-		div.row.wow.fadeInDown
+		div.row
+			h1.center.wow.fadeInDown Bengali Association of Greater Chicago
+		div.row
 			div.carousel.slide.carousel-fade(data-ride="carousel")#main-slider
 				ol.carousel-indicators
 					li.active(data-target="#main-slider" data-slide-to="0")
@@ -11,29 +11,100 @@ section#main
 					li(data-target="#main-slider" data-slide-to="3")
 				div.carousel-inner(role="listbox")
 					div.item.active
-						img.img-responsive.img-newevent(src="images/bagc/home/BAGC.png")
-					div.item
-						img.img-responsive.img-newevent(src="images/bagc/home/2016 Mission.png")
-					div.item
-						img.img-responsive.img-newevent(src="images/bagc/upcomingevents/1.png")
-					div.item
-						img.img-responsive.img-newevent(src="images/bagc/upcomingevents/2.jpg")
+						img.img-responsive.img-newevent.wow.fadeIn(src="images/bagc/home/BAGC_Event.png")
+					div.item.wow
+						img.img-responsive.img-newevent.wow.fadeIn(src="images/bagc/home/2016 Mission.png")
+					div.item.wow
+						img.img-responsive.img-newevent.wow.fadeIn(src="images/bagc/upcomingevents/BG.png")
+					div.item.wow
+						img.img-responsive.img-newevent.wow.fadeIn(src="images/bagc/upcomingevents/2.png")
 							
-				a.left.hidden-xs(href="#main-slider" data-slide="prev")
+				a.prev.hidden-xs(href="#main-slider" data-slide="prev")
 					i.fa.fa-chevron-left
-				a.right.hidden-xs(href="#main-slider" data-slide="next")
+				a.next.hidden-xs(href="#main-slider" data-slide="next")
 					i.fa.fa-chevron-right
 
-		section.sponsors-area#sponsors
-			div.container
-				div.center
-					h2 Sponsors
-				div.row.wow.fadeInDown
-					if banners
-						each banner,index in banners
-							div.col-sm-2.col-xs-4(prettyp)
-								div.recent-work-wrap.wow.fadeInLeft
-									img.img-event.img-responsive.img-banner(src="#{banner}" alt="")
-									div.overlay
-										a.preview(style="width:100%" href="#{banner}" rel="prettyPhoto[pp_banner]")
-											i.fa.fa-eye		
+										
+		div.row
+			
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInLeft
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/1.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/1_2.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInLeft
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/2.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/2.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInLeft
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/3.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/3.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInRight
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/4.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/4.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInRight
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/5.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/5.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInRight
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/6.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/6.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInLeft
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/7.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/7.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInLeft
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/8.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/8.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInLeft
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/9.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/9.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInRight
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/10.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/10.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInRight
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/11.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/11.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInRight
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/12.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/12.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+		
+			div.col-sm-2.col-xs-4(prettyp)
+				div.recent-work-wrap.wow.fadeInRight
+					img.img-event.img-responsive.img-banner(src="images/bagc/banners/13.png" alt="PMG")
+					div.overlay
+						a.preview(style="width:100%" href="images/bagc/banners/13.png" rel="prettyPhoto[pp_banner]")
+									i.fa.fa-eye
+													
